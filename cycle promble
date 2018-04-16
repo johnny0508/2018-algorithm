@@ -1,0 +1,40 @@
+def recycle(a,b):
+	t=0
+	for m in range(a,b+1):
+		global n
+		n=0
+		
+		
+
+		cycle(m)
+		if n>t:
+			t=n
+	print(t)
+
+
+def cycle(a):
+	global n
+	n=n+1
+	if a==1:
+		return n
+	
+	
+
+	if a%2==0:
+		cycle(a//2)
+	else:
+		cycle(a*3+1)
+
+i=0
+while i<100 :
+
+	times=raw_input()
+	times=times.split()
+	a=int(times[0])
+	b=int(times[1])
+	recycle(a, b)
+	i+=1
+
+
+
+
