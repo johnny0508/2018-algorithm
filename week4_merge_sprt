@@ -47,7 +47,7 @@ def choose_all(A,k):
         #a.append(i)
 
 k=int(input())
-seq=raw_input()
+seq=input()
 seq=seq.split()
 seq=list(map(int,seq))
 whole=[]

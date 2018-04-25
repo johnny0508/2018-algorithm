@@ -1,11 +1,7 @@
-n="01001010010"
-a=['.#.', '##.','...' ,'##' ]
-b=a[1]
 
-a[0]="#"+a[0][0:2]
-print(a[0][0:2])
+from PIL import Image
+import numpy as np
 
-print(a)
-print(b[2])
-m=range(5)
-print(m)
+im_address = r"C:\Users\chouhin\Desktop\105409528\0\0-1.bmp"
+im = Image.open(im_address)
+im.show()

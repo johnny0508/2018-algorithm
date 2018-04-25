@@ -24,11 +24,10 @@ def cycle(a):
 		cycle(a//2)
 	else:
 		cycle(a*3+1)
-
 i=0
-while i<100 :
+while i <20:
 
-	times=raw_input()
+	times=input()
 	times=times.split()
 	a=int(times[0])
 	b=int(times[1])
